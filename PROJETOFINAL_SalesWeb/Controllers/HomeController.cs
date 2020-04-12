@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PROJETOFINAL_SalesWeb.Models;
+using PROJETOFINAL_SalesWeb.Models.ViewModels;
 
 namespace PROJETOFINAL_SalesWeb.Controllers
 {
