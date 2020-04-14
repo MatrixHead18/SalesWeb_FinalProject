@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using PROJETOFINAL_SalesWeb.Data;
+using PROJETOFINAL_SalesWeb.Services;
 
 namespace PROJETOFINAL_SalesWeb
 {
@@ -40,6 +41,7 @@ namespace PROJETOFINAL_SalesWeb
                     options.UseMySql(Configuration.GetConnectionString("PROJETOFINAL_SalesWebContext"), 
                     builder => builder.MigrationsAssembly("PROJETOFINAL_SalesWeb")));
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
